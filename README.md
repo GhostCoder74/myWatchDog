@@ -88,6 +88,8 @@ Options:
   -h, --help              Show this help
 ```
 
-## License
+## 📝License
 
-[GPL](https://www.gnu.org/licenses/#GPL)
+### Licensed under GPL-3.0-or-later
+
+See: [LICENSE](https://www.gnu.org/licenses/#GPL)
