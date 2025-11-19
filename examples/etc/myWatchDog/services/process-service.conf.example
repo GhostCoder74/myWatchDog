@@ -1,0 +1,21 @@
+[Process]
+name = mariadb
+type = process
+cpu_threshold = 2
+restart_cmd = systemctl restart mariadb.service
+
+[Alert]
+enabled = true
+message_prefix = MariaDB
+
+[Logging]
+tag = mariadb-watchdog
+notify_success = false
+
+[Telegram]
+notify_success = false
+dbg_json = false
+
+[Checks]
+# Optional: Threshold value for remaining day, if needed. (not mandatory)
+days_threshold = 14

@@ -1,0 +1,21 @@
+# myWatchDog Crontab Example v2025.11.18-1
+# Format:
+# ┌──────── minute (0-59)
+# │ ┌────── hour (0-23)
+# │ │ ┌──── day des Monats (1-31)
+# │ │ │ ┌── month (1-12)
+# │ │ │ │ ┌ day of week (0-6)
+# │ │ │ │ │
+# *  *  *  *  *  user  command
+
+# Interval Mode every 5 Minutes
+*/5  *  *  *  *  root /home/admin/shared/bin/myWatchDog.sh >/dev/null 2>&1
+
+# Daily Mode, every day at 06:00
+0  6  *  *  *  root /home/admin/shared/bin/myWatchDog.sh -m daily >/dev/null 2>&1
+
+# Weekly Mode, every monday at 06:01
+1  6  *  *  1  root /home/admin/shared/bin/myWatchDog.sh -m weekly >/dev/null 2>&1
+
+# Monthly mode, every 1st at 06:02
+2  6  1  *  *  root /home/admin/shared/bin/myWatchDog.sh -m monthly >/dev/null 2>&1

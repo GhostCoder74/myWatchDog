@@ -1,0 +1,23 @@
+[Service]
+name = my-Special-Check-Sript
+type = script
+script_cmd = /path/to/script.sh -opt1 -opt2 # ... etc
+script_cmd_daily = /path/to/script.sh -opt1 -daily # ... -daily=example Option, etc
+script_cmd_weekly = /path/to/script.sh -opt1 -opt2 # ... -daily=example Option,-daily=example Option, etc
+script_cmd_monthly = /path/to/script.sh -opt1 -opt2 # ... -daily=example Option, etc
+
+[Alert]
+enabled = true
+message_prefix = my-Special-Check-Sript
+
+[Logging]
+tag = my-Special-Check-watchdog
+notify_success = false
+
+[Telegram]
+notify_success = false
+dbg_json = false
+
+[Checks]
+# Optional: Threshold value for remaining day, if needed. (not mandatory)
+days_threshold = 14
