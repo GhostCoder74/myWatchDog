@@ -1,4 +1,7 @@
 # README.md v2025.11.18-1
+<p align="center">
+  <img src="examples/usr/share/myWatchDog/logo/myWatchDog-Logo.jpeg" alt="myWatchDog logo" width="280">
+</p>
 ## myWatchDog – Advanced Linux Service & Process Monitor
 
 myWatchDog is a flexible, script-based system watchdog that automatically monitors **Systemd services**, **processes**, and **any scripts**.
