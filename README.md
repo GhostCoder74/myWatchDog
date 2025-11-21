@@ -45,24 +45,30 @@ make install DRY_RUN=1 FORCE=1
 
 Default installation paths:
 ``` 
+/etc/cron.d/mywatchdog       # for default cronjob
 /etc/myWatchDog/             # for main and service configs
 /usr/local/bin/myWatchDog.sh # for the script
-/etc/cron.d/mywatchdog       # for default cronjob
+/usr/share/myWatchDog/       # for default logos of myWatchDog
 ```
 Tree structure is displayed automatically, using tree if installed; otherwise, a textual tree is shown with echo.
 
 ## 📂 Example Directory Structure After Installation
 ```
+/etc/cron.d/
+    └── mywatchdog
 /etc/myWatchDog/
 ├── main.conf
-├── services
-│   ├── process-service.conf.example
-│   ├── script-service.conf.example
-│   └── systemd-service.conf.example
+└── services
+    ├── process-service.conf.example
+    ├── script-service.conf.example
+    └── systemd-service.conf.example
 /usr/local/bin/
-├── myWatchDog.sh
-/etc/cron.d/
-└── mywatchdog
+└── myWatchDog.sh
+/usr/share/myWatchDog/
+├── myWatchDog-Daily-Logo.jpeg
+├── myWatchDog-Logo.jpeg
+├── myWatchDog-Monthly-Logo.jpeg
+└── myWatchDog-Weekly-Logo.jpeg
 ```
 
 ## ⚙ Configuration
