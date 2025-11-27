@@ -1,3 +1,16 @@
+# -----------------------------------------------------------------------------
+# Project:        myWatchDog
+# File:           Makefile
+# Author:         Christian Klose
+# Email:          ghostcoder@gmx.de
+# GitHub:         https://github.com/GhostCoder74/Set-Project-Headers (GhostCoder74)
+# Copyright (c) 2025 Christian Klose
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# This file is part of myWatchDog.
+# Do not remove this header.
+# Header added by https://github.com/GhostCoder74/Set-Project-Headers
+# -----------------------------------------------------------------------------
 PREFIX=/usr
 APP_NAME=myWatchDog
 ETC_DIR=/etc/$(APP_NAME)
